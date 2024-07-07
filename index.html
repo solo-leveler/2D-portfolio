@@ -12,7 +12,7 @@
   <style>
     @font-face {
       font-family: monogram;
-      src: url(./public/monogram.ttf);
+      src: url(./monogram.ttf);
     }
 
     body {
@@ -44,6 +44,7 @@
       align-items: flex-start;
       word-spacing: 0.2rem;
       filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+      /* overflow: auto; */
     }
 
     .ui-text {
@@ -78,12 +79,11 @@
     <div id="ui">
       <p class="note">Tap/Click around to move</p>
       <div id="textbox-container" style="display: none;">
-        <div class="textbox">
-          <p id="dialogue" class="class-text">
+        <div id="textbox">
+          <p id="dialogue" class="ui-text"></p>
           <div class="btn-container">
             <button id="close" class="ui-close-btn">Close</button>
           </div>
-          </p>
         </div>
       </div>
     </div>
